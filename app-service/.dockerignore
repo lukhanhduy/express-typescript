@@ -1,0 +1,5 @@
+/app-service/api/node_modules
+/app-service/api/npm-debug.log
+/app-service/api/dist
+# Cache used by TypeScript's incremental build
+*.tsbuildinfo

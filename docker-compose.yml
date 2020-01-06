@@ -1,0 +1,31 @@
+version: "3"
+services:
+  # security:
+  #   network_mode: "host"
+  #   container_name: node
+  #   build: ./app-service
+  #   ports:
+  #    - "8123:8123"
+  #   depends_on:
+  #    - db
+  #   environment:
+  #    - DATABASE_HOST=db
+  #   volumes:
+  #    - ./app-service/api:/app/api
+  # db:
+  #   network_mode: "host"
+  #   container_name: mysql
+  #   build: ./db-service
+  #   ports:
+  #     - 3306:3306
+  redis:
+    image: redis
+    network_mode: "host"
+    container_name: cache
+    expose:
+      - 6379
+  rabbitmq:
+    build: ./rabbitmq-service
+    network_mode: "host"
+    container_name: rabbitmq
+    

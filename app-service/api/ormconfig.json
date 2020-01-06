@@ -1,0 +1,19 @@
+{
+  "type": "mysql",
+  "host": "127.0.0.1",
+  "port": 3306,
+  "username": "root",
+  "password": "123456",
+  "database": "db_shop",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+     "server/entities/**/*.ts"
+  ],
+  "migrations": [
+     "server/migration/**/*.ts"
+  ],
+  "subscribers": [
+     "server/subscriber/**/*.ts"
+  ]
+}

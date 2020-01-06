@@ -1,0 +1,12 @@
+{
+	"errors": {
+		"unkown": "Error unknown",
+		"existUser": "This email or phone has been registed",
+		"notExistUser": "Your account not exist in system",
+		"errorCreate": "Has error when create data"
+	},
+	"success": {
+		"registed": "Your account has been registed",
+		"logged": "You are logged on system"
+	}
+}
